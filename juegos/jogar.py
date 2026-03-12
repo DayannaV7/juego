@@ -41,7 +41,6 @@ def all_jugadores():
     return lista_jugador
 
 
-# ✅ show_one_player — busca por id con for, igual que tu pokemon
 def buscar_jugador(id: int):
     for jugador in lista_jugador:
         if jugador.id == id:
@@ -55,7 +54,6 @@ def show_one_player(id: int):
         return {"mensaje": "jugador no encontrado"}
     return jugador
 
-# ✅ compare_two_players — compara altura igual que pokemon compara attack
 @app.get("/compare_jugadores/")
 def compare_two_players(id_1: int, id_2: int):
     jugador_1 = buscar_jugador(id_1)
@@ -83,7 +81,6 @@ def compare_two_players(id_1: int, id_2: int):
         "mas_alto": mas_alto
     }
 
-# ✅ show_equipo — filtra por equipo con for, igual que pokemon filtra por tipo
 @app.get("/show_equipo/")
 def show_equipo(equipo: str):
     jugadores_equipo = []
