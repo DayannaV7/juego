@@ -1,0 +1,5 @@
+Método,Endpoint,Descripción
+GET,/show_alljugadores/,Muestra todos los jugadores
+GET,/show_onejugador/{id},Muestra un jugador por su ID
+GET,/compare_jugadores/?id_1=1&id_2=3,Compara la altura de dos jugadores
+GET,/show_equipo/?equipo=Colombia,Muestra todos los jugadores de un equipo
